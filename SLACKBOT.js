@@ -2,7 +2,7 @@ var FS = require('fs');
 var MARKOV = require('markoff');
 var MARK = new MARKOV();
 var API = require('slack-api');
-var sample = require( 'lodash/collection/sample' );
+var sample = require( 'lodash/sample' );
 
 function ISLOUD(MSG)
 {
