@@ -7,6 +7,7 @@
     "url": "https://github.com/ceejbot/LOUDBOT-SLACK/issues"
   },
   "dependencies": {
+    "lodash": "^4.3.0",
     "markoff": "^2.2.0",
     "restify": "^2.6.2",
     "slack-api": "ceejbot/slack-api"

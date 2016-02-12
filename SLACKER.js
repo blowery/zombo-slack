@@ -19,7 +19,7 @@ SERVER.use(RESTIFY.bodyParser({ mapParams: false }));
 
 SERVER.get('/PING', PING);
 SERVER.get('/LOUDS', LOUDS);
-SERVER.post('/MESSAGE', MESSAGE);
+SERVER.post('/', MESSAGE);
 SERVER.listen(process.env.PORT || 4444);
 
 function PING(REQUEST, RESPONSE, NEXT)
