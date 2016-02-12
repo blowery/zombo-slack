@@ -47,7 +47,7 @@ function MESSAGE(REQUEST, RESPONSE, NEXT)
         WHAT = LOUDBOT.LISTENUP(REQUEST.body);
 
     if (WHAT)
-        RESPONSE.json(200, { text: WHAT, channel: REQUEST.body.channel_name });
+        RESPONSE.json(200, { text: WHAT, "response_type": "in_channel" });
     else
         RESPONSE.send(200);
 
